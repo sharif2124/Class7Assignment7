@@ -18,7 +18,7 @@ public class SetDemo {
             System.out.println(i);
         }
 
-        //add
+        //Update Value
         number.add(40);
         System.out.println(number);
 
@@ -33,10 +33,31 @@ public class SetDemo {
         name.add("Tamim");
         System.out.println("Name is : "+name);
 
+
         HashSet<String> name1 = new HashSet<>();
+        //AddAll
         name1.addAll(name);
         name1.add("Rahim");
         System.out.println("Name is : "+name1);
+        //Search Value
+
+        System.out.println( name1.contains("Rahim"));
+
+
+
+
+        HashSet<String> subject = new HashSet<>();
+        subject.add("English");
+        subject.add("Math");
+        subject.add("Bangla");
+        subject.add("C");
+
+        System.out.println(subject);
+        //Remove All
+
+        subject.removeAll(subject);
+        System.out.println(subject);
+
 
     }
 }

@@ -44,11 +44,25 @@ public class ListDemo {
 
         ArrayList<String> country = new ArrayList<>();
         country.add("Bangladesh");
+        //AddAll
         country.addAll(name);
         System.out.println(country);
-
+        //List Size
         System.out.println(country.size());
+        //Search Value
+        System.out.println( name.get(2));
 
+        ArrayList<String> subject = new ArrayList<>();
+        subject.add("English");
+        subject.add("Math");
+        subject.add("Bangla");
+        subject.add("C");
+
+        System.out.println(subject);
+        //Remove All
+
+        subject.removeAll(subject);
+        System.out.println(subject);
 
     }
 }
